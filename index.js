@@ -24,7 +24,11 @@ function handler(req, res) {
     }
     res.writeHead(200, {
       'Content-Length': body.length,
-      'Content-Type': 'application/json' })
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, Authorization, Content-Length, X-Requested-With'
+    })
     res.end(body)
   }
 }

@@ -47,6 +47,10 @@ or
 {"error": "// syntaxError or moduleMissing", "message": "// a hopefully helpful error message"}
 ```
 
+## running the tests
+
+`npm test` runs the server side tests. to test that CORS works okay run `node browser-test.js` and then open up `localhost:8080` in a browser
+
 ## license
 
 BSD
