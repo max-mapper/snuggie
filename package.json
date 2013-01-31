@@ -1,0 +1,16 @@
+{
+  "name": "snuggie",
+  "description": "http server to remote bundle a javascript program using browserify",
+  "version": "0.0.1",
+  "dependencies": {
+    "browserify": "1.17.3",
+    "concat-stream": "0.1.1"
+  },
+  "devDependencies": {
+    "request": "2.12.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  }
+}
