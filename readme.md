@@ -22,6 +22,16 @@ var snuggieHandler = require('snuggie').handler
 require('http').createServer(snuggleHandler).listen(8000)
 ```
 
+or
+
+```
+var snuggie = require('snuggie').handler
+require('http').createServer(function(req, res) {
+  snuggle(req, function(err, bundle) {})
+}).listen(8000)
+```
+
+
 ## api
 
 first you must make a PUT/POST request to snuggie where your request upload body contains an ascii a javascript program (no multipart form uploads allowed)
