@@ -9,6 +9,7 @@ module.exports = function(port, cb) {
 
 module.exports.handler = handler
 module.exports.respond = respond
+module.exports.bundle = bundle
 
 function handler(req, res) {
   req.pipe(concat(buffered))

@@ -19,7 +19,7 @@ or
 
 ```
 var snuggieHandler = require('snuggie').handler
-require('http').createServer(snuggleHandler).listen(8000)
+require('http').createServer(snuggieHandler).listen(8000)
 ```
 
 or
@@ -27,7 +27,7 @@ or
 ```
 var snuggie = require('snuggie').handler
 require('http').createServer(function(req, res) {
-  snuggle(req, function(err, bundle) {})
+  snuggie(req, function(err, bundle) {})
 }).listen(8000)
 ```
 
@@ -55,6 +55,12 @@ or
 
 ```javascript
 {"error": "// syntaxError or moduleMissing", "message": "// a hopefully helpful error message"}
+```
+
+you can also just pass a function string and a callback:
+
+```javascript
+snuggie.bundle(funcString, function(err, bundle) {})
 ```
 
 ## running the tests
